@@ -1,0 +1,75 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+
+
+body{
+    background-color: rgb(55, 53, 53);
+    margin: 0;
+    
+}
+
+.container{
+    /* border: 2px solid red; */
+    /* font-size: 29px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    position: relative;
+    right: 67px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Gluten', cursive;
+}
+
+input{
+    /* border: 2px solid green; */
+    color: white;
+    padding: 17px;
+    background-color: rgb(29, 27, 27);
+    border: none;
+    border-radius: 10px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 18px;
+}
+
+#text{
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+    padding: 7px;
+}
+
+#form.invalid :before{
+    content: '';
+    position: absolute;
+    right: 545px;
+    top: 365px;
+    width: 24px;
+    height: 24px;
+    background-image: url(./invalid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+#form.valid :before{
+    content: '';
+    position: absolute;
+    right: 545px;
+    top: 365px;
+    width: 24px;
+    height: 24px;
+    background-image: url(./valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
